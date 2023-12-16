@@ -57,13 +57,12 @@ export const obtenerCliente = async id => {
 
 //Actualiza un registro
 
-export const actualizarCliente = async cliente => {
-    console.log(cliente);
+export const editarCliente = async cliente => {
     try {
         await fetch(`${url}/${cliente.id}`, {
             method: "PUT",
             body: JSON.stringify(cliente),
-            header: {
+            headers: {
                 "Content-Type": "application/json"
             }
         });

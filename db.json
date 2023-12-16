@@ -1,9 +1,6 @@
 {
   "clientes": [
     {
-      "id": 26
-    },
-    {
       "nombre": "Jesus",
       "email": "jesuspetit11@hotmail.com",
       "telefono": "123123",
@@ -12,6 +9,13 @@
     },
     {
       "id": 28
+    },
+    {
+      "nombre": "cochinae",
+      "email": "jesus@gmail.com",
+      "telefono": "123123123123",
+      "empresa": "77777777",
+      "id": 29
     }
   ]
 }

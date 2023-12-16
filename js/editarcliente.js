@@ -1,5 +1,5 @@
 import {validar, mostrarAlerta} from "./funciones.js";
-import { obtenerCliente, actualizarCliente } from "./API.js";
+import { editarCliente, obtenerCliente  } from "./API.js";
 
 (function() {
 
@@ -43,6 +43,8 @@ import { obtenerCliente, actualizarCliente } from "./API.js";
             id: parseInt(idInput.value)
         }
 
+        console.log(cliente);
+
         if(!validar(cliente)){
             //Mostramos mensaje
             mostrarAlerta("Todos los campos son obligatorios");
@@ -50,6 +52,6 @@ import { obtenerCliente, actualizarCliente } from "./API.js";
         } 
 
         //Si se pasan todas las validaciones se reescribe el objeto
-        actualizarCliente(cliente);
+        editarCliente(cliente);
     }
 })();
